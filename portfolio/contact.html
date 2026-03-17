@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicola - Développeur Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header : Navbar -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="nav-logo">Nicola</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="btnTheme" class="btn btn-secondary">🌙</button>
+        </nav>  
+    </header>
+
+    <section class="section">
+        <div class="container" style="max-width: 600px;">
+            <h1 class="section-title">Contactez-moi</h1>
+
+            <div class="card">
+                <form id="contactForm">
+
+                    <div class="mb-md">
+                        <label for="name" style="display: block; margin-bottom: 8px; font-weight: 600;">Nom</label>
+                        <input type="text" id="name" name="name" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
+                    </div>
+                    <div class="mb-md">
+                        <label for="email" style="display: block; margin-bottom: 8px; font-weight: 600;">Email</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
+                    </div>
+                    <div class="mb-md">
+                        <label for="message" style="display: block; margin-bottom: 8px; font-weight: 600;">Message</label>
+                        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;"></textarea>
+                    </div>
+                    <button type="submit"  class="btn btn-primary" style="width: 100%;">Envoyer</button>
+                </form>
+                <div id="formMessage" class="hidden mt-md" style="padding: 12px; border-radius: 8px; text-align: center;"></div>
+            </div>
+
+            <div class="mt-lg text-center">
+                <h3>Mes coordonnées</h3>
+                <p>Email: <a href="mailto:kikasvryat@gmail.com">kikasvryat@gmail.com</a></p>
+                <p> 
+                    <a href="https://www.instagram.com/kikasvryat" target="_blank">Instagram</a>\
+                    <a href="#">Linkedin</a>\
+                    <a href="#">GitHub</a>
+                </p>
+            </div> 
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Nicola. Tous droits réservés.</p>
+            <p>
+                <a href="https://www.instagram.com/kikasvryat" target="_blank">Instagram</a> |
+                <a href="#">LinkedIn</a> |
+                <a href="#">GitHub</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>

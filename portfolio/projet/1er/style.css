@@ -1,0 +1,108 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(test.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 30px; /* Marge autour du contenu pour aérer */
+
+}
+
+h1 {
+    color:rgb(0, 0, 0);
+    text-align: center;  /* Centre le texte */
+    font-weight: 700; 
+    font-size: 2em;
+}
+
+h2 {
+    color: rgb(73, 74, 199);
+}
+
+p {
+    font-size: 16px;  /* Taille du texte des paragraphes */
+    line-height: 1.5;  /* Espacement entre lignes pour plus de lisibilité */
+    color: rgb(0, 0, 0);
+
+}
+
+ul {
+    list-style-type: circle;  /* Puces carrées pour la liste */
+    display: flex;  /* Ajout perso Flexbox comme demandé */
+    flex-wrap: wrap;  /* Wrap si trop long */
+    gap: 20px;  /* Espacement */
+    color: rgb(73, 74, 199);
+}
+
+img {
+    width: 300px;
+    max-width: 100%;
+    display: block;  /* Traite l'image comme un bloc */
+    margin: 0 auto;  /* Centre l'image horizontalement */
+}
+
+blockquote {
+    font-style:italic;
+    color: rgb(73, 74, 199);
+    border-left: 5px rgb(61, 61, 61) solid;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+a {
+    color: crimson; 
+    text-decoration: underline;
+}
+
+footer {
+    size: 15px; 
+    color: yellow;
+    text-decoration: overline;
+    border-top: 1px #a097b6;
+
+}
+
+.highlight {
+    background-color:rgba(128, 0,128, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+}
+main p {
+    color: rgb(73, 75, 199);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        gap: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+}
