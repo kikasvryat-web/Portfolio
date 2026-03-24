@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Calculatrice v1</title>
+        <link rel="stylesheet" href="style.css">      
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Calculatrice</h1>
+            
+            <div class="input-group">
+                <label for="nombre1">Nombre 1: </label>
+                <input type="number" id="nombre1" placeholder="Entrez un nombre">
+            </div>
+
+            <div class="input-group">
+                <label for="nombre2">Nombre 2: </label>
+                <input type="number" id="nombre2" placeholder="Entrez un nombre">
+            </div>
+
+            <div class="buttons">
+                <button id="btnPlus">+</button>
+                <button id="btnMoins">-</button>
+                <button id="btnFois">*</button>
+                <button id="btnDivise">/</button>
+            </div>
+
+            <div class="resultat">
+                <h2>Résultat : <span id="seeresultat">0</span></h2>
+            </div>
+
+        </div>
+        
+        <div class="container">
+            <h1>Défaut/solution</h1>
+            <p>J'ai eu des difficultées à faire les liaisons avec les signes que j'ai finalement résolut avec claude. Le problème était que j'ai mal associé les btnPlus etc. j'ai mis uniquement les Plus etc dans le java au niveau des const mais pas au html, ce qui à fait une incoherence avec les id des boutons. j'ai finalement replacer correctement.</p>
+            <p>Ensuite j'ai mal placé les variable que j'avais bien coder au début en pensant avoir mal lier. A ce moment, j'ai modifier en pensant résoudre un problème innexistant. J'ai donc remis comme a l'origine. </p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
