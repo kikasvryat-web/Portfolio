@@ -11,6 +11,9 @@ const divideButton = document.getElementById('btnDiviser');
 const multiplyButton = document.getElementById('btnMultiplier');
 const equalsButton = document.getElementById('btnEgal');
 const clearButton = document.getElementById('btnClear');
+const decimalButton = document.getElementById('btnVirgule');
+const toggleSignButton = document.getElementById('btnPlusMoins');
+const percentButton = document.getElementById('btnPourcent');
 
 function updateScreen() {
     screen.textContent = display;
@@ -102,3 +105,53 @@ function clear() {
 };
 
 clearButton.addEventListener('click', clear);
+
+function addDecimal() {
+    if (display.includes('.')){
+        return;
+    }
+    if (newOperation===true){
+        display = '0.';
+        newOperation = false;
+    }else{
+        display += '.';
+    }
+    updateScreen();
+};
+
+decimalButton.addEventListener('click', addDecimal);
+
+function toggleSign () {
+    if (display==='0'){
+        return;
+    }
+    if (display.startsWith('-')){
+        display = display.substring(1);
+    }else{
+        display='-'+ display;
+    }
+    updateScreen();
+};
+toggleSignButton.addEventListener('click', toggleSign);
+
+function calculatePercent() {
+    const currentValue = parseFloat(display);
+    
+    if (firstNumber !== null && operation) {
+        switch(operation) {
+            case '+':
+            case '-':
+                display = (firstNumber * currentValue / 100).toString();
+                break;
+            case '×':
+            case '÷':
+                display = (currentValue / 100).toString();
+                break;
+        }
+    } else {
+        display = (currentValue / 100).toString();
+    }
+    
+    updateScreen();
+}
+percentButton.addEventListener('click',calculatePercent);

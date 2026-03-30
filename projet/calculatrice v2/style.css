@@ -32,6 +32,9 @@ body {
     margin-bottom: 10px;
     border-radius: 10px;
     min-height: 80px;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-x: auto;
 }
 
 .boutons {
