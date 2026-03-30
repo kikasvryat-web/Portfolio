@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calculatrice {
+    background-color: #000;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    max-width: 380px;
+    width: 100%;
+}
+
+.ecran {
+    background-color: black;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    min-height: 80px;
+}
+
+.boutons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.2s;
+    height: 70px;
+    width: 70px;
+}
+
+.btn-numero {
+    background-color: #333;
+    color: white;
+}
+.btn-numero:hover {
+    background-color: #4a4a4a;
+}
+
+.btn-fonction {
+    background-color: #a5a5a5;
+    color: black;
+}
+.btn-fonction:hover {
+    background-color:#a6a6a6 ;
+}
+
+.btn-operation {
+    background-color: #ff9500;
+    color: white;
+}
+.btn-operation:hover {
+    background-color: #fda932;
+}
+
+.btn-egal {
+    background-color: #ff9500;
+    color: white;
+}
+.btn-egal:hover {
+    background-color: #fda932;
+}
+
+.btn-zero {
+    grid-column: span 2;
+    border-radius: 35px;
+    width: 150px;
+}
