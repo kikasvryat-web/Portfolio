@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo List</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Ma Todo List.</h1>
+            <div class="add-task">
+                <input type="text" id="taskInput" placeholder="Nouvelle tâche...">
+                <button id="addButton">+ Ajouter</button>
+            </div>
+        
+            <div class="filters">
+                <button class="filter-btn active" id="filterAll">Toutes</button>
+                <button class="filter-btn" id="filterActive">Actives</button>
+                <button class="filter-btn" id="filterCompleted">Complétées</button>
+            </div>
+        
+            <ul id="taskList" class="task-list">
+
+            </ul>
+
+    
+        
+            <div class="footer">
+                <div class="counter">
+                    <span id="activeCount">0</span> tâche(s) active(s).
+                    Total: <span id="totalCount">0</span> 
+                </div>
+                <button id="clearAll" class="clear-btn">Tout supprimer.</button>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
